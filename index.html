@@ -190,6 +190,15 @@
   .tl-year { font-size: 13px; color: var(--grey); padding-top: 2px; }
   .tl-role { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
   .tl-org { font-size: 13px; color: var(--grey); }
+  .tl-row:has(.tl-logo) { grid-template-columns: 100px 1fr auto; }
+  .tl-logo {
+    height: 32px;
+    width: auto;
+    max-width: 110px;
+    object-fit: contain;
+    align-self: center;
+  }
+  .tl-logo-tall { height: 48px; }
 
   /* ── PROJECTS ── */
   .video-grid {
@@ -370,6 +379,9 @@
     .hero-content { padding: 0 24px 48px; }
     .container { padding: 0 20px; }
     .tl-row { grid-template-columns: 80px 1fr; }
+    .tl-row:has(.tl-logo) { grid-template-columns: 80px 1fr auto; }
+    .tl-logo { height: 24px; max-width: 72px; }
+    .tl-logo-tall { height: 36px; }
     .stats { gap: 28px; }
   }
 </style>
@@ -488,6 +500,7 @@
       <div class="tl-row">
         <span class="tl-year">2023 →</span>
         <div><div class="tl-role">Head of Interactive Media Technologies</div><div class="tl-org">Vicomtech, Donostia-San Sebastián</div></div>
+        <img class="tl-logo" src="logos/vicomtech.svg" alt="Vicomtech logo">
       </div>
       <div class="tl-row">
         <span class="tl-year">2020 – 2023</span>
@@ -496,14 +509,17 @@
       <div class="tl-row">
         <span class="tl-year">2018 – 2020</span>
         <div><div class="tl-role">Research Scientist</div><div class="tl-org">IBM Research, Dublin</div></div>
+        <img class="tl-logo" src="logos/ibm.svg" alt="IBM logo">
       </div>
       <div class="tl-row">
         <span class="tl-year">2014 – 2018</span>
         <div><div class="tl-role">Postdoctoral Researcher</div><div class="tl-org">CWI – Centrum Wiskunde &amp; Informatica, Amsterdam</div></div>
+        <img class="tl-logo" src="logos/cwi.svg" alt="CWI logo">
       </div>
       <div class="tl-row edu">
         <span class="tl-year">2015</span>
         <div><div class="tl-role">PhD in Computer Science</div><div class="tl-org">Universidad de Oviedo, Xixón-Gijón</div></div>
+        <img class="tl-logo tl-logo-tall" src="logos/uniovi.jpg" alt="Universidad de Oviedo logo">
       </div>
       <div class="tl-row">
         <span class="tl-year">2007 – 2014</span>
@@ -516,6 +532,7 @@
       <div class="tl-row">
         <span class="tl-year">2006 - 2007</span>
       <div><div class="tl-role">Visiting Master's Thesis Student</div><div class="tl-org">Universitetet i Oslo, Oslo</div></div>
+        <img class="tl-logo" src="logos/uio.svg" alt="Universitetet i Oslo logo">
       </div>
       <div class="tl-row">
         <span class="tl-year">2004 – 2006</span>
